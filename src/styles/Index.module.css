@@ -1,0 +1,52 @@
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.buttonBase {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.connectButton {
+  background-color: #dfe6e9;
+}
+
+.mintButton {
+  background-color: #55efc4;
+}
+
+.burnButton {
+  background-color: #fab1a0;
+}
+
+.shopWrapper {
+  height: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nftImage {
+  border-radius: 10px;
+}
+
+.nftButtons {
+  display: flex;
+  justify-content: space-between;
+}
