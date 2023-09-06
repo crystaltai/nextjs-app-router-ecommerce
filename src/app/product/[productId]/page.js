@@ -4,9 +4,8 @@ import styles from './productDetails.module.css';
 
 // Fetch product details
 async function getProductDetails(id) {
-  const baseUrl = process.env.BASE_URL;
-  const url = `/api/product/${id}`;
-  const response = await fetch(baseUrl + url);
+  const url = `https://nextjs-app-router-ecommerce.vercel.app/api/product/${id}`;
+  const response = await fetch(url);
   const data = await response.json();
   return data;
 }
