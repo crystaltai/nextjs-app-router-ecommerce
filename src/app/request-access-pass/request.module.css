@@ -1,0 +1,81 @@
+.RequestWrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+.RequestMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  flex-shrink: 2;
+}
+
+.RequestButton {
+  margin-top: 1rem;
+  font-family: var(--font-interstate-regular);
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #bd98ba, transparent) #99b9c8;
+  transition: background-color 0.5s;
+}
+
+.RequestButton:hover,
+.RequestButton:focus {
+  background-color: #9da6c5;
+  color: #fff;
+}
+
+.AccessPass {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+}
+
+@media (min-width: 500px) {
+  .AccessPass {
+    max-width: 490px;
+    height: 280px;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+  }
+}
+
+@media (min-width: 950px) {
+  .RequestWrapper {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .RequestMessage {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@keyframes float {
+  0% {
+    border-radius: 22px;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    border-radius: 22px;
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    border-radius: 22px;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}

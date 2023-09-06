@@ -1,0 +1,28 @@
+.FAQSectionWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Icon {
+  background-color: var(--grey-400);
+  border: 2px solid var(--grey-400);
+  border-radius: 5px;
+  padding: 2px;
+  line-height: 0.5rem;
+  height: min-content;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Question {
+  font-weight: 500;
+}
+
+.Answer {
+  font-weight: 300;
+}
