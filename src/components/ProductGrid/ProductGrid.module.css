@@ -1,0 +1,28 @@
+.ProductGridWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.ProductCard {
+  flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+  .ProductCard {
+    flex-basis: 48.1%;
+  }
+}
+
+@media (min-width: 950px) {
+  .ProductCard {
+    flex-basis: 31.8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ProductCard {
+    flex-basis: 32.1%;
+  }
+}
